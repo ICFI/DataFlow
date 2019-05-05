@@ -2,7 +2,7 @@
 <template encoding-version="1.2">
     <description></description>
     <groupId>040f8631-016a-1000-8da7-9a81e6837652</groupId>
-    <name>HttpToS3</name>
+    <name>HttpToS3_1</name>
     <snippet>
         <connections>
             <id>13c604c6-7e85-3e9f-0000-000000000000</id>
@@ -35,8 +35,8 @@
             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
             <backPressureObjectThreshold>10000</backPressureObjectThreshold>
             <bends>
-                <x>197.10222464414824</x>
-                <y>206.06696368762175</y>
+                <x>182.70232230039824</x>
+                <y>211.82697345324675</y>
             </bends>
             <destination>
                 <groupId>9857d88c-3eaa-3a9e-0000-000000000000</groupId>
@@ -89,12 +89,12 @@
             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
             <backPressureObjectThreshold>10000</backPressureObjectThreshold>
             <bends>
-                <x>1033.417448337996</x>
-                <y>101.33636708220308</y>
+                <x>1019.0175459942459</x>
+                <y>107.09637684782808</y>
             </bends>
             <bends>
-                <x>1033.417448337996</x>
-                <y>151.33636708220308</y>
+                <x>1019.0175459942459</x>
+                <y>157.09637684782808</y>
             </bends>
             <destination>
                 <groupId>9857d88c-3eaa-3a9e-0000-000000000000</groupId>
@@ -141,8 +141,8 @@
             <id>312d771b-79b2-3458-0000-000000000000</id>
             <parentGroupId>9857d88c-3eaa-3a9e-0000-000000000000</parentGroupId>
             <position>
-                <x>23.73034612897095</x>
-                <y>55.698111009205036</y>
+                <x>7.89038030865845</x>
+                <y>38.418142747486286</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -255,8 +255,8 @@
             <id>385ed554-18ec-3372-0000-000000000000</id>
             <parentGroupId>9857d88c-3eaa-3a9e-0000-000000000000</parentGroupId>
             <position>
-                <x>571.7921873933585</x>
-                <y>312.3984645685812</y>
+                <x>557.3922850496085</x>
+                <y>318.1584743342062</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -372,8 +372,8 @@
             <id>5d1e2b79-7a63-39fa-0000-000000000000</id>
             <parentGroupId>9857d88c-3eaa-3a9e-0000-000000000000</parentGroupId>
             <position>
-                <x>21.620003275176487</x>
-                <y>315.3079552169687</y>
+                <x>7.220100931426487</x>
+                <y>321.0679649825937</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -421,6 +421,12 @@
                             <name>character-set</name>
                         </value>
                     </entry>
+                    <entry>
+                        <key>filename</key>
+                        <value>
+                            <name>filename</name>
+                        </value>
+                    </entry>
                 </descriptors>
                 <executionNode>ALL</executionNode>
                 <lossTolerant>false</lossTolerant>
@@ -449,6 +455,10 @@
                         <key>character-set</key>
                         <value>UTF-8</value>
                     </entry>
+                    <entry>
+                        <key>filename</key>
+                        <value>titanic_raw</value>
+                    </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
                 <schedulingPeriod>86400  sec</schedulingPeriod>
@@ -469,8 +479,8 @@
             <id>6fc8e544-0735-3a76-0000-000000000000</id>
             <parentGroupId>9857d88c-3eaa-3a9e-0000-000000000000</parentGroupId>
             <position>
-                <x>570.4174483379959</x>
-                <y>61.33636708220308</y>
+                <x>556.0175459942459</x>
+                <y>67.09637684782808</y>
             </position>
             <bundle>
                 <artifact>nifi-aws-nar</artifact>
@@ -694,7 +704,7 @@
                     </entry>
                     <entry>
                         <key>Bucket</key>
-                        <value>sagemaker-us-east-1-318775028588</value>
+                        <value>sagemaker-us-east-1-318775028588/data/raw</value>
                     </entry>
                     <entry>
                         <key>Content Type</key>
@@ -827,5 +837,5 @@
             <type>org.apache.nifi.processors.aws.s3.PutS3Object</type>
         </processors>
     </snippet>
-    <timestamp>05/05/2019 02:45:41 UTC</timestamp>
+    <timestamp>05/05/2019 13:11:16 UTC</timestamp>
 </template>
