@@ -9,11 +9,11 @@
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
       "bends" : [ {
-        "x" : 1286.6974482018745,
-        "y" : 42.67828014782742
+        "x" : 1200.297423787812,
+        "y" : -44.921714511596406
       }, {
-        "x" : 1286.6974482018745,
-        "y" : 92.67828014782742
+        "x" : 1200.297423787812,
+        "y" : 5.078285488403594
       } ],
       "componentType" : "CONNECTION",
       "destination" : {
@@ -139,12 +139,26 @@
     "funnels" : [ ],
     "identifier" : "80e5fda2-71ea-3846-b7f4-c57a5d4f89d9",
     "inputPorts" : [ ],
-    "labels" : [ ],
+    "labels" : [ {
+      "componentType" : "LABEL",
+      "groupIdentifier" : "80e5fda2-71ea-3846-b7f4-c57a5d4f89d9",
+      "height" : 42.000003814697266,
+      "identifier" : "b96960ba-8c8c-3346-aac1-1876f51ee2db",
+      "label" : "Process group that connects to a NiFi Registry",
+      "position" : {
+        "x" : -32.30000906797608,
+        "y" : 91.20003612927277
+      },
+      "style" : {
+        "font-size" : "14px"
+      },
+      "width" : 301.1999816894531
+    } ],
     "name" : "Saulath_WIP",
     "outputPorts" : [ ],
     "position" : {
-      "x" : 2347.2093903460864,
-      "y" : -410.2495427281491
+      "x" : 2447.2093903460864,
+      "y" : -452.2495427281491
     },
     "processGroups" : [ ],
     "processors" : [ {
@@ -164,8 +178,8 @@
       "name" : "ExecuteStreamCommand",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 329.5702825162871,
-        "y" : -17.999953952514375
+        "x" : 231.17025810222458,
+        "y" : -85.19995245047733
       },
       "properties" : {
         "Max Attribute Length" : "256",
@@ -241,8 +255,8 @@
       "name" : "GenerateFlowFile",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 274.9000031390551,
-        "y" : 256.64986828259305
+        "x" : 309.69999093202387,
+        "y" : 423.4498865931399
       },
       "properties" : {
         "character-set" : "UTF-8",
@@ -319,8 +333,8 @@
       "name" : "PutS3Object",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 823.6974482018745,
-        "y" : 2.6782801478274223
+        "x" : 737.297423787812,
+        "y" : -84.9217145115964
       },
       "properties" : {
         "FullControl User List" : "${s3.permissions.full.users}",
@@ -566,8 +580,8 @@
       "name" : "PutFile",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 825.0721872572371,
-        "y" : 253.74037763420552
+        "x" : 849.0721872572371,
+        "y" : 412.1403715306899
       },
       "properties" : {
         "Create Missing Directories" : "true",
